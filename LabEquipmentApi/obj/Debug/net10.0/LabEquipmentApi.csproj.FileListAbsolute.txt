@@ -255,3 +255,5 @@ C:\Users\rolko\source\repos\LabEquipmentApi\LabEquipmentApi\bin\Debug\net10.0\zh
 C:\Users\rolko\source\repos\LabEquipmentApi\LabEquipmentApi\bin\Debug\net10.0\Mapster.dll
 C:\Users\rolko\source\repos\LabEquipmentApi\LabEquipmentApi\bin\Debug\net10.0\Mapster.Core.dll
 C:\Users\rolko\source\repos\LabEquipmentApi\LabEquipmentApi\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\rolko\source\repos\LabEquipmentApi\LabEquipmentApi\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\rolko\source\repos\LabEquipmentApi\LabEquipmentApi\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll

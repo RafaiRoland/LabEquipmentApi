@@ -50,6 +50,36 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Equipment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEquipmentRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEquipmentRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEquipmentRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/equipment/{id}": {
@@ -141,6 +171,21 @@
   },
   "components": {
     "schemas": {
+      "CreateEquipmentRequest": {
+        "required": [
+          "name",
+          "room"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "room": {
+            "type": "string"
+          }
+        }
+      },
       "Equipment": {
         "required": [
           "name",

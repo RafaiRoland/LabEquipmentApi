@@ -1,5 +1,6 @@
 using LabEquipmentApi.Data;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,7 @@ var connectionString = builder.Configuration.GetConnectionString("LabDbConnectio
 
 builder.Services.AddDbContext<LabDbContext>(options =>
     options.UseNpgsql(connectionString));
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 
 var app = builder.Build();
 

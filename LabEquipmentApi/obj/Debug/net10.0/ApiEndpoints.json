@@ -20,6 +20,22 @@
     ]
   },
   {
+    "ContainingType": "LabEquipmentApi.Controllers.EquipmentController",
+    "Method": "PostEquipment",
+    "RelativePath": "api/equipment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "LabEquipmentApi.Contracts.CreateEquipmentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LabEquipmentApi.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "api/equipment",
