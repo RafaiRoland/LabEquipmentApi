@@ -6,6 +6,7 @@ namespace LabEquipmentApi.Data;
 public class LabDbContext : DbContext
 {
     public DbSet<Equipment> EquipmentItems => Set<Equipment>();
+    public DbSet<Equipment> Equipment { get; set; }
 
     public LabDbContext(DbContextOptions<LabDbContext> options) : base(options)
     {
@@ -21,5 +22,4 @@ public class LabDbContext : DbContext
             new Equipment { Id = 3, Name = "Monitor", Room = "Lab 11", IsAvailable = true }
         );
     }
-}
 }
